@@ -1,0 +1,50 @@
+package GraphicEx;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'GraphicEx'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclimg;
+
+contains
+  GraphicColor in 'GraphicColor.pas',
+  GraphicCompression in 'GraphicCompression.pas',
+  GraphicEx in 'GraphicEx.pas',
+  GraphicStrings in 'GraphicStrings.pas',
+  JpegCompression in 'JpegCompression.pas',
+  MZLib in 'MZLib.pas',
+  TIFF in 'TIFF.pas',
+  AutoResourceStr in '3rd party\AutoResourceStr\AutoResourceStr.pas',
+  variantWrapper in '3rd party\AutoResourceStr\variantWrapper.pas',
+  ZLibEx in '3rd party\DelphiZlib\ZLibEx.pas',
+  ZLibExApi in '3rd party\DelphiZlib\ZLibExApi.pas',
+  ZLibExGZ in '3rd party\DelphiZlib\ZLibExGZ.pas';
+
+end.
